@@ -1,5 +1,5 @@
 @echo off
-title "ShxdowOS AIO Script | made by Shxdow.#6411 "
+title "ShxdowOS AIO Script | made by Shxdow.#6411 
 
 
 echo "Installing APIs"
@@ -464,7 +464,7 @@ cls
 
 echo "Adding Barebone Services Script"
 timeout /t 1
-cd C:\XOS\Tweaks
+cd C:\ShxdowOS\Tweaks
 curl.exe -o ServicesTweaks.bat "https://raw.githubusercontent.com/Shxdow1/Services-Tweaks/main/ServicesTweaks.bat"
 cls
 
@@ -477,13 +477,13 @@ cls
 
 echo "Adding NIP Files"
 timeout /t 1
-curl.exe -o "C:\XOS\1- Setup GPU Drivers\Nvidia\Tweaks (run after Setup)\For New Version.nip" "https://cdn.discordapp.com/attachments/870397424496173086/896755324919382038/imribiy472.12.nip"
-curl.exe -o "C:\XOS\1- Setup GPU Drivers\Nvidia\Tweaks (run after Setup)\For Old Version.nip" "https://cdn.discordapp.com/attachments/870397424496173086/897241706544660530/imribiy457.30.nip"
+curl.exe -o "C:\ShxdowOS\1- Setup GPU Drivers\Nvidia\Tweaks (run after Setup)\For New Version.nip" "https://cdn.discordapp.com/attachments/870397424496173086/896755324919382038/imribiy472.12.nip"
+curl.exe -o "C:\ShxdowOS\1- Setup GPU Drivers\Nvidia\Tweaks (run after Setup)\For Old Version.nip" "https://cdn.discordapp.com/attachments/870397424496173086/897241706544660530/imribiy457.30.nip"
 cls
 
 echo "Adding Change resolution without immersive control panel shortcut"
 timeout /t 1
-curl.exe -o "C:\XOS\Change resolution without immersive cp.lnk" "https://cdn.discordapp.com/attachments/900387614362853377/900387630812913684/Change_resolution_without_immersive_cp.lnk"
+curl.exe -o "C:\ShxdowOS\Change resolution without immersive cp.lnk" "https://cdn.discordapp.com/attachments/900387614362853377/900387630812913684/Change_resolution_without_immersive_cp.lnk"
 cls
 
 echo "Device Manager Tweaks"
@@ -1171,7 +1171,7 @@ Reg.exe add "HKCU\Software\Microsoft\Windows\CurrentVersion\Notifications\Settin
 Reg.exe add "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\ContentDeliveryManager" /v "SubscribedContent-338389Enabled" /t REG_DWORD /d "0" /f
 Reg.exe add "HKCU\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager" /v "SubscribedContent-353698Enabled" /t REG_DWORD /d "0" /f
 Reg.exe add "HKCU\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager" /v "SubscribedContent-314563Enabled" /t REG_DWORD /d "0" /f
-Reg.exe add "HKCR\Directory\background\shell\Tweaked by imribiy#7966" /f
+Reg.exe add "HKCR\Directory\background\shell\Tweaked by Shxdow.#6411" /f
 cls
 
 echo "Disabling Input Personalization"
