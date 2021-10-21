@@ -459,13 +459,13 @@ cls
 echo "Adding StartUpOptimizer"
 timeout /t 1
 cd C:\Users\Administrator\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup
-curl.exe -o StartUpOptimizer.bat "https://raw.githubusercontent.com/imribiy/XOS/main/StartUpOptimizer.bat"
+curl.exe -o ShxdowOS-SU.BAT "https://raw.githubusercontent.com/Shxdow1/Startup/main/ShxdowOS-SU.BAT"
 cls
 
 echo "Adding Barebone Services Script"
 timeout /t 1
 cd C:\XOS\Tweaks
-curl.exe -o BareboneServicesScript.bat "https://raw.githubusercontent.com/imribiy/XOS/main/XOS-1803-ServiceOptimizer.bat"
+curl.exe -o ServicesTweaks.bat "https://raw.githubusercontent.com/Shxdow1/Services-Tweaks/main/ServicesTweaks.bat"
 cls
 
 echo "Applying Power Plan"
@@ -1301,9 +1301,9 @@ bcdedit /set {globalsettings} custom:16000067 true
 bcdedit /set {globalsettings} custom:16000069 true
 bcdedit /set {globalsettings} custom:16000069 true
 net localgroup "Remote Desktop Users" "Administrator" /delete
-wmic computersystem where name="%computername%" call rename name="XOS"
-bcdedit /set {current} description "XOS"
-label C: XOS
+wmic computersystem where name="%computername%" call rename name="ShxdowOS"
+bcdedit /set {current} description "ShxdowOS"
+label C: ShxdowOS
 cls
 
 echo "Kernel & Mitigations Tweaking..."
